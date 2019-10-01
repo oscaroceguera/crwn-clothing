@@ -20,7 +20,6 @@ const Header = ({ currentUser }) => (
       <Link className='option' to='/contact'>
         CONTACT
       </Link>
-      <Link className='option' to='/contact'>
         {currentUser ? (
           <div
             className='option'
@@ -37,7 +36,6 @@ const Header = ({ currentUser }) => (
             SIGN IN
           </Link>
         )}
-      </Link>
     </div>
   </div>
 )
