@@ -1,4 +1,4 @@
-import {takeEvery, call, put} from 'redux-saga/effects'
+import {takeLatest, call, put} from 'redux-saga/effects'
 import {firestore, convertCollectionsSnapshotToMap} from '../../firebase/firebase.utils'
 import {
   fetchCollectionsSuccess,
@@ -19,5 +19,5 @@ export function* fetchCollectionsAsync() {
 }
 
 export function* fetchCollectionsStart() {
-  yield takeEvery(ShopActionsTypes.FETCH_COLLECTIONS_START, fetchCollectionsAsync)
+  yield takeLatest(ShopActionsTypes.FETCH_COLLECTIONS_START, fetchCollectionsAsync)
 }
