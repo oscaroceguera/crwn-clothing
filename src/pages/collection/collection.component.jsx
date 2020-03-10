@@ -5,6 +5,7 @@ import CollectionItem from "../../components/collection-item/collection-item.com
 
 import { selectCollection } from "../../redux/shop/shop.selector";
 
+
 import "./collection.scss";
 
 const CollectionPage = ({ collection }) => {
